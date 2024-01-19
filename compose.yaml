@@ -8,7 +8,7 @@ services:
       POSTGRES_USER: kubenews
       POSTGRES_DB: kubenews
   kubenews:
-    image: rafael10061994/kube-news:v1
+    image: rafael10061994/kube-news:v4
     ports:
       - 8080:8080
     environment:
@@ -20,3 +20,4 @@ services:
 networks:
   kubenews_net:
     driver: bridge
+    
