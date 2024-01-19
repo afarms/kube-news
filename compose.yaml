@@ -9,6 +9,8 @@ services:
       POSTGRES_DB: kubenews
   kubenews:
     image: rafael10061994/kube-news:v4
+    depends_on:
+      - postgre
     build:
       context: ./src
       dockerfile: ./dockerfile
